@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+const int kFIL=6;
+const int kCOL=15;
+
+int main() {
+	int matriz[kFIL][kCOL];
+	bool log;
+	
+	....
+	
+	log=modulo(matriz);
+	return 0;
+}
+
+bool modulo(int v[][kCOL]) {
+	int i,j,k;
+	bool as;
+	
+	as=false;
+	k=0;
+	
+	for(i=0; i<kFIL; i++) {
+		k=0;
+		for(j=0; j<kCOL; j++) {
+			if(v[i][j]=='*')
+				k++;
+		}
+		if(k==15)
+			as=true;
+	}
+}

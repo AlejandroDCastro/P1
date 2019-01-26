@@ -1,0 +1,44 @@
+//Fecha de nacimiento
+	typedef char TCadena[15];
+	
+typedef struct{
+	int dia;
+	int mes;
+	int anyo;
+}TFecha;
+
+typedef struct{
+	TCadena nombre;
+	TCadena ape1lido1;
+	TCadena apellido2;
+}TIdentidad;
+
+typedef struct{
+	int num[8];
+	char letra;
+}TDNI;
+
+typedef struct{
+	TCadena nombre;
+	TFecha nac;
+	TCadena ciuNac;
+	TCadena provNac;
+}THijo;
+
+typedef struct{
+	TIdentidad ident;
+	TDNI dni;
+	TFecha expDNI;
+	TFecha valDNI;
+	TIdentidad padre;
+	TIdentidad madre;
+	TCadena ciuNac;
+	TCadena provNac;
+	TCadena ciuRes;
+	TCadena provRes;
+	THijo hijos[5];
+	int numHijos;
+	TFecha nac;
+}TPersona;
+
+typedef TPersona TDatos[90];

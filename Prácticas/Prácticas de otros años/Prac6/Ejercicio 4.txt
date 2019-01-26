@@ -1,0 +1,18 @@
+ // 5. Ejercicio resuelto 3. Repasa
+ 
+ n=3
+ 
+ 
+ función(3)=3*funcion(2)  función(3)=3*2=6
+		|					|
+		|					|
+		|					|
+ función(2)=2*funcion(1)  función(2)=2*1=2
+		|					|
+		|					|
+		|					|
+ función(1)=1*funcion(0)  función(1)=1*1=1
+		|					|
+		|					|
+		|					|
+	función(0)=1 ------------
